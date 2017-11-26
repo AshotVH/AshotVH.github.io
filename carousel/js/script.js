@@ -134,6 +134,7 @@ window.onload = function () {
 document.addEventListener("visibilitychange", CheckVisibility);
 function CheckVisibility() {
     if (!document.hidden) {
+        SetTransition();
         timerID = setInterval(MoveNext, carouselPeriod);
     } else {
         clearInterval(timerID);
@@ -144,6 +145,7 @@ slider.addEventListener("mouseover", function () {
     clearInterval(timerID);
 });
 slider.addEventListener("mouseout", function () {
+    SetTransition();
     timerID = setInterval(MoveNext, carouselPeriod);
 });
 
