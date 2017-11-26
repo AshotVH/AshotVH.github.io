@@ -7,7 +7,7 @@ var arrowMoveBack = document.getElementById("slider-arrow move-back");
 var sliderBottomButtons = document.getElementById("slider-bottom-buttons").children;
 var numberOfSlides = slides.length;
 var currentSlide = 0;
-var transitionTime = 1200;
+var transitionTime = 1000;
 var lastClick = 0;   //Last time user has clicked on the slider arrows;
 function PlaceSlides() {
     slides[0].style.transform = "translate(" + 0 + "%)";
@@ -126,8 +126,8 @@ function MoveBack() {
 }
 
 var timerID;
-var carouselPeriod = 3000;
-window.onload = function () {
+var carouselPeriod = 2700;
+document.onload = function () {
     SetTransition();
     timerID = setInterval(MoveNext, carouselPeriod);
 };
