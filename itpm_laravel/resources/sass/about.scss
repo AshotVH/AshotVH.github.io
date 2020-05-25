@@ -1,0 +1,38 @@
+.about {
+  padding: 45px 0 15px 0;
+}
+
+.history__text-big {
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px 0 15px 0;
+}
+
+.history-desc {
+  padding-top: 5px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 22px;
+  color: rgba(34, 33, 33, .7);
+  line-height: 1.4;
+}
+
+.hor-line {
+  height: 0;
+  border-top: 2px solid #cfcfcf;
+  margin-bottom: 25px;
+}
+
+.table-row {
+  padding: 10px 15px;
+  min-height: 50px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.table-row:nth-of-type(2n +1) {
+  background-color: #e9eaec;
+}
+
