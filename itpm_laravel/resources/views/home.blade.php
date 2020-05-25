@@ -104,7 +104,7 @@
                                 </div>
                                 <h3 class="partners__card__h3">The Yerevan Physics Institute</h3>
                             </a>
-                            <a href=http://www.ipr.sci.am/" class="partners__card" target="_blank">
+                            <a href="http://www.ipr.sci.am/" class="partners__card" target="_blank">
                                 <div>
                                     <img class="partners__card__img" src="{{asset('images/ipr_logo.png')}}" alt="IPR">
                                 </div>
