@@ -1,0 +1,30 @@
+html {
+  margin: 0 !important;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.home {
+  background: url('../images/karahunj.jpg') no-repeat fixed;
+  background-size: cover;
+  min-height: 450px;
+}
+
+.home-content {
+  justify-content: center;
+  padding-top: 380px;
+}
+
+.home-content__text {
+  background-color: rgba(35, 35, 35, .3);
+  color: white;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Merriweather', sans-serif;
+  padding: 25px 5px;
+  display: inline-block;
+  text-align: center;
+}
+

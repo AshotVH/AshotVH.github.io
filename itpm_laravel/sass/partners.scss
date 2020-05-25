@@ -1,0 +1,45 @@
+.partners {
+    padding: 85px 0 15px 0;
+}
+
+.partners__h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.parters-int__container {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.partners__h2 {
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 55px 0;
+    font-size: 24px;
+}
+
+.partners__card {
+    display: inline-block;
+    width: 250px;
+    text-align: center;
+    padding: 8px 4px;
+}
+
+.partners__card__img {
+    width: 200px;
+}
+
+.partners__card__h3 {
+    padding-top: 15px;
+    font-size: 18px;
+}

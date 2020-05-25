@@ -1,0 +1,22 @@
+.footer {
+  border-top: 1px solid grey;
+  background-color: $footer-grey;
+  padding: 25px 0 10px 0;
+}
+
+.footer__h2 {
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer__mail {
+  font-size: 19px;
+  color: white;
+}
+
+.footer__mail:hover {
+  text-decoration: none;
+  color: #7c7c7c;
+}

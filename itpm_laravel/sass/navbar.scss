@@ -1,0 +1,117 @@
+.header {
+  background-color: $bg-grey;
+}
+
+.top-menu {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 12px 0 12px 0;
+  transition: padding 0.1s linear;
+  background-color: transparent;
+  z-index: 1;
+
+}
+
+.nav-bar {
+  display: flex;
+  flex-basis: 1221px;
+  justify-content: space-between;
+  padding: 5px 0 5px 0;
+  align-items: center;
+}
+
+.nav-bar__logo {
+  margin-left: 10px;
+}
+
+.nav-bar__logo > img {
+  height: 62px;
+}
+
+.nav-bar__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 606px;
+  margin-right: 65px;
+}
+
+.nav-bar__link {
+  color: $main-blue-color;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-bar__link:link {
+  text-decoration: none;
+}
+
+.nav-bar__link:hover {
+  color: #987454;
+}
+
+.nav-bar__mobile-button {
+  display: none;
+  z-index: 999;
+}
+
+.nav-bar__mobile-close-menu {
+  width: 41px;
+  height: 41px;
+  margin-right: 20px;
+}
+
+@media (max-width: 991px) {
+  .nav-bar__mobile-button {
+    display: block;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .nav-bar__mobile-close-menu {
+    display: none;
+  }
+
+  .nav-bar__links_mobile {
+    position: fixed;
+    width: 100%;
+    transform: translateX(100%);
+    height: 100vh;
+    margin: 0;
+    top: 0;
+    right: 0;
+    background-color: $bg-grey;
+    flex-direction: column;
+    justify-content: center;
+    transition: top 0.1s linear, transform 0.3s ease-out;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  @keyframes menu-items-slide {
+    from {
+      transform: translateX(300%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  .nav-bar__link_mobile_animated {
+    animation-name: menu-items-slide;
+    animation-timing-function: ease-out;
+  }
+  .nav-bar__link_mobile {
+    font-size: 26px;
+    padding: 5px 0 5px 0;
+  }
+  .nav-bar__links_mobile_opening {
+    opacity: 1;
+  }
+  .nav-bar__links_mobile_opened {
+    transform: translateX(0);
+    z-index: 999;
+  }
+}
