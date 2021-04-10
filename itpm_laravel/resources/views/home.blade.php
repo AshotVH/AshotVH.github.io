@@ -15,7 +15,7 @@
                             </a>
                         </div>
                         <div class="col-auto">
-                            <h2 class="collaborations__card__h2">DUNO</h2>
+                            <h2 class="collaborations__card__h2">DUNE</h2>
                             <p class="collaborations__card__sort-desc">The Deep Underground Neutrino Experiment </p>
                         </div>
                     </div>
