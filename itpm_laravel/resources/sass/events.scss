@@ -1,0 +1,50 @@
+.events {
+    padding: 45px 0 55px 0;
+}
+
+.events__head-cont {
+    margin-bottom: 30px;
+}
+
+.event-container {
+    border-bottom: 1px solid $main-blue-color;
+    padding: 15px 10px 25px 10px;
+}
+
+.event-container p {
+    margin: 0;
+}
+
+.event-container__header {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Merriweather", sans-serif;
+    letter-spacing: 1px;
+}
+
+.event-container__date-time {
+    font-size: 18px;
+    font-family: "Assistant", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+.event-container__rubric {
+    padding-top: 3px;
+    line-height: 1.2;
+}
+.event-container__rubric-name {
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.event-container__rubric-content {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.conferences{
+    padding-top: 50px;
+}

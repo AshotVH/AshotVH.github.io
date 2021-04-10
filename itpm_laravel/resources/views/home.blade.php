@@ -100,13 +100,13 @@
                         <div class="col-auto">
                             <a href="https://www.yerphi.am/" class="partners__card" target="_blank">
                                 <div>
-                                    <img class="partners__card__img" src="{{asset('images/yerphi_logo.png')}}" alt="Yerphi logo">
+                                    <img class="partners__card__img" src="{{asset('assets/images/yerphi_logo.png')}}" alt="Yerphi logo">
                                 </div>
                                 <h3 class="partners__card__h3">The Yerevan Physics Institute</h3>
                             </a>
                             <a href="http://www.ipr.sci.am/" class="partners__card" target="_blank">
                                 <div>
-                                    <img class="partners__card__img" src="{{asset('images/ipr_logo.png')}}" alt="IPR">
+                                    <img class="partners__card__img" src="{{asset('assets/images/ipr_logo.png')}}" alt="IPR">
                                 </div>
                                 <h3 class="partners__card__h3">The Institute for Physical Research of National Academy
                                     of Sciences of Armenia</h3>
@@ -120,13 +120,13 @@
                         <div class=" col-12 col-md-6 parters-int__container">
                             <a href="https://home.cern/" class="partners__card" target="_blank">
                                 <div>
-                                    <img class="partners__card__img" src="{{asset('images/cern-logo.png')}}" alt="CERN logo">
+                                    <img class="partners__card__img" src="{{asset('assets/images/cern-logo.png')}}" alt="CERN logo">
                                 </div>
                                 <h3 class="partners__card__h3">CERN</h3>
                             </a>
                             <a href="https://theory.cern/" class="partners__card" target="_blank">
                                 <div>
-                                    <img class="partners__card__img" src="{{asset('images/cern-logo.png')}}" alt="CERN logo">
+                                    <img class="partners__card__img" src="{{asset('assets/images/cern-logo.png')}}" alt="CERN logo">
                                 </div>
                                 <h3 class="partners__card__h3">CERN
                                     Department of Theoretical Physics</h3>
@@ -135,13 +135,13 @@
                         <div class="col-12 col-md-6 parters-int__container">
                             <a href="https://fnal.gov/" class="partners__card" target="_blank">
                                 <div>
-                                    <img class="partners__card__img" src="{{asset('images/fermilab_logo.png')}}" alt="FERMILAB logo">
+                                    <img class="partners__card__img" src="{{asset('assets/images/fermilab_logo.png')}}" alt="FERMILAB logo">
                                 </div>
                                 <h3 class="partners__card__h3">Fermi National Accelerator Laboratory</h3>
                             </a>
                             <a href="https://www.mpp.mpg.de/" class="partners__card" target="_blank">
                                 <div>
-                                    <img class="partners__card__img" src="{{asset('images/Max_Planck_logo.jpeg')}}"
+                                    <img class="partners__card__img" src="{{asset('assets/images/Max_Planck_logo.jpeg')}}"
                                          alt="Max Planck logo">
                                 </div>
                                 <h3 class="partners__card__h3">The Max Planck Institute for Physics</h3>
@@ -150,14 +150,14 @@
                         <div class="col-12 col-md-6 parters-int__container">
                             <a href="https://www.physik.uzh.ch/en.html" class="partners__card" target="_blank">
                                 <div>
-                                    <img class="partners__card__img" src="{{asset('images/uzh_logo.jpg')}}"
+                                    <img class="partners__card__img" src="{{asset('assets/images/uzh_logo.jpg')}}"
                                          alt="Zurich University logo">
                                 </div>
                                 <h3 class="partners__card__h3">Physics Institute of the University of Zurich</h3>
                             </a>
                             <a href="https://www.ictp.it/" class="partners__card" target="_blank">
                                 <div>
-                                    <img class="partners__card__img" src="{{asset('images/ictp_logo.png')}}"
+                                    <img class="partners__card__img" src="{{asset('assets/images/ictp_logo.png')}}"
                                          alt="ICTP logo">
                                 </div>
                                 <h3 class="partners__card__h3">The Abdus Salam International Centre for Theoretical
@@ -167,14 +167,14 @@
                         <div class="col-12 col-md-6 parters-int__container">
                             <a href="https://theory-hamburg.desy.de/" class="partners__card" target="_blank">
                                 <div>
-                                    <img class="partners__card__img" src="{{asset('images/desy_logo.svg')}}"
+                                    <img class="partners__card__img" src="{{asset('assets/images/desy_logo.svg')}}"
                                          alt="Desy logo">
                                 </div>
                                 <h3 class="partners__card__h3">The DESY theory group</h3>
                             </a>
                             <a href="https://phys.technion.ac.il/en/" class="partners__card" target="_blank">
                                 <div>
-                                    <img class="partners__card__img" src="{{asset('images/phy-logo.png')}}"
+                                    <img class="partners__card__img" src="{{asset('assets/images/phy-logo.png')}}"
                                          alt="Technion logo">
                                 </div>
                                 <h3 class="partners__card__h3">The Department of Physics at Technion</h3>
@@ -183,14 +183,14 @@
                         <div class="col-12 col-md-6 parters-int__container">
                             <a href="https://www.uv.es/" class="partners__card" target="_blank">
                                 <div>
-                                    <img class="partners__card__img" src="{{asset('images/UV_logo.png')}}"
+                                    <img class="partners__card__img" src="{{asset('assets/images/UV_logo.png')}}"
                                          alt="University of Valencia logo">
                                 </div>
                                 <h3 class="partners__card__h3">University of Valencia</h3>
                             </a>
                             <a href="https://www.fuw.edu.pl/" class="partners__card" target="_blank">
                                 <div>
-                                    <img class="partners__card__img" src="{{asset('images/Warsaw_logo.png')}}"
+                                    <img class="partners__card__img" src="{{asset('assets/images/Warsaw_logo.png')}}"
                                          alt="Faculty of Physics at the University of Warsaw logo">
                                 </div>
                                 <h3 class="partners__card__h3">Faculty of Physics at the University of Warsaw</h3>

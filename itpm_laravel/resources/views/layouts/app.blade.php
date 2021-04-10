@@ -5,9 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}" type="image/x-icon">
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <title>Institute for Theoretical Physics and Modeling</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
     <nav class="top-menu">
         <div class="nav-bar">
             <a href="{{url('/')}}" class="nav-bar__logo">
-                <img src="{{asset('images/ITPM_logo.png')}}" alt="logo">
+                <img src="{{asset('assets/images/ITPM_logo.png')}}" alt="logo">
             </a>
             <div class="nav-bar__links nav-bar__links_mobile">
                 <a href="{{url('/research')}}" class="nav-bar__link nav-bar__link_mobile">Research</a>
@@ -24,8 +24,8 @@
                 <a href="{{url('/about')}}" class="nav-bar__link nav-bar__link_mobile">About</a>
             </div>
             <div class="nav-bar__mobile-button">
-                <img class="nav-bar__mobile-open-menu" src="{{asset('images/menu_bars.png')}}" alt="menu">
-                <img class="nav-bar__mobile-close-menu" src="{{asset('images/menu_exit.png')}}" alt="exit">
+                <img class="nav-bar__mobile-open-menu" src="{{asset('assets/images/menu_bars.png')}}" alt="menu">
+                <img class="nav-bar__mobile-close-menu" src="{{asset('assets/images/menu_exit.png')}}" alt="exit">
             </div>
         </div>
     </nav>
@@ -63,8 +63,8 @@
         </div>
     </div>
 </footer>
-<script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
-<script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
-<script src="{{asset('js/app.js')}}"></script>
+<script src="{{asset('assets/js/jquery-3.2.1.min.js')}}"></script>
+<script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('assets/js/app.js')}}"></script>
 </body>
 </html>

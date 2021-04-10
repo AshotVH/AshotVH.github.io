@@ -1,0 +1,33 @@
+.research__research-topics {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+
+.research-topics-head {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.research__research-subtopics-group {
+    list-style-type: none;
+}
+.research__research-subtopics-group >li::before {
+    content: "\2022";
+    color: $main-blue-color;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.research-overview {
+    padding: 45px 0 25px 0;
+}
+
+.research-publ > a{
+    text-decoration: none;
+    font-size: 22px;
+
+}
+
+
