@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../show_graphs"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"cmath": "cpp",
+			"chrono": "cpp"
+		}
+	}
+}

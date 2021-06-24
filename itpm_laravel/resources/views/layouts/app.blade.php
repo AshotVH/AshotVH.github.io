@@ -26,8 +26,8 @@
                 <img src="{{asset('assets/images/ITPM_logo.png')}}" alt="logo">
             </a>
             <div class="nav-bar__links nav-bar__links_mobile">
-                <a href="{{url('/research')}}" class="nav-bar__link nav-bar__link_mobile">Research</a>
-                <a href="{{url('events')}}" class="nav-bar__link nav-bar__link_mobile">Events</a>
+                <a href="{{route('research')}}" class="nav-bar__link nav-bar__link_mobile">Research</a>
+                <a href="{{url('/events')}}" class="nav-bar__link nav-bar__link_mobile">Events</a>
                 <a href="{{url('/news')}}" class="nav-bar__link nav-bar__link_mobile">News</a>
                 <a href="{{url('/about')}}" class="nav-bar__link nav-bar__link_mobile">About</a>
             </div>

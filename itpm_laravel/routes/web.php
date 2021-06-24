@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/research', function () {
     return view('research');
-});
+})->name('research');
 
 Route::get('/events', function () {
     return view('events');

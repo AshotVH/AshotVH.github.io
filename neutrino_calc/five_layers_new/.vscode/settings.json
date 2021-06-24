@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "cmath": "cpp",
+        "chrono": "cpp"
+    },
+    "python.pythonPath": "/home/ashot/anaconda3/bin/python"
+}
