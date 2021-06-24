@@ -14,7 +14,6 @@ file = open("../five_layers_new/delta_05pi_p12.csv", "r")
 coordinates2 = file.read().splitlines()
 file.close()
 
-
 points = np.zeros((180, 900))
 
 for i in range(180):
