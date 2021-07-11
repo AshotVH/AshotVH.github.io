@@ -4,9 +4,9 @@ from plotly.subplots import make_subplots
 import numpy as np
 import time
 t1 = time.perf_counter()
-showAngle = "45"
+showAngle = "18"
 fig = go.Figure()
-infile = open("../five_layers/delta_05pi_p12.csv", "r")
+infile = open("../adiabatic/delta_05pi_p_01.txt", "r")
 coordinates = infile.read().splitlines()
 energies = []
 prob = []
@@ -20,7 +20,7 @@ infile.close()
 fig.add_trace(go.Scatter(x=energies, y=prob,
                     mode='lines+markers',
                     name='normal'))
-infile = open("../any_layers/delta_05pi_p01.txt", "r")
+infile = open("../any_layers/std_files/delta_05pi_p_01.txt", "r")
 coordinates = infile.read().splitlines()
 energies = []
 prob = []

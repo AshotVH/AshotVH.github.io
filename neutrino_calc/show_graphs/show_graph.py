@@ -7,12 +7,13 @@ from matplotlib.ticker import LinearLocator
 import math
 
 t1 = time.perf_counter()
-file = open("../adiabatic/delta_05pi_p_01.txt", "r")
+file = open("../adiabatic/delta_05pi_p_11.txt", "r")
 coordinates1 = file.read().splitlines()
 file.close()
-file = open("../five_layers_new/delta_05pi_p12.csv", "r")
+file = open("../any_layers/adiabatic_1_files/delta_05pi_p_11.txt", "r")
 coordinates2 = file.read().splitlines()
 file.close()
+
 
 points = np.zeros((180, 900))
 

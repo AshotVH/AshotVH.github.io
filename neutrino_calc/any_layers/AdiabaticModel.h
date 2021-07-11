@@ -5,7 +5,7 @@
 #include <Eigen/Dense>
 #include "SphericEarthModel.h"
 
-class StandardModel
+class AdiabaticModel
 {
 protected:
     const double PI = 3.14159265358979323846;
@@ -56,7 +56,7 @@ protected:
 
 public:
     //argument delta in degrees
-    StandardModel(SphericEarthModel *model, const std::vector<double> &n_pot, double energy_min, double energy_max, double energy_step, double delta)
+    AdiabaticModel(SphericEarthModel *model, const std::vector<double> &n_pot, double energy_min, double energy_max, double energy_step, double delta)
     {
         this->model = model;
         this->delta = delta * PI / 180;
@@ -83,7 +83,7 @@ public:
             this->energies.push_back(energy);
             energy += energy_step;
         }
-        for (int angle_idx = 0, angle_len = angles.size(); angle_idx < angle_len; angle_idx++)
+        for (int angle_idx = 0, angles_len = angles.size(); angle_idx < angles_len; angle_idx++)
         {
             std::vector<double> temp_00;
             std::vector<double> temp_01;
@@ -91,19 +91,16 @@ public:
             std::vector<double> temp_11;
             for (auto &energy : energies)
             {
-                a << 1, 0,
-                    0, 1;
+                matrix_1 << cos(theta_m(energy, distances[angle_idx][0], n_pot[0])), sin(theta_m(energy, distances[angle_idx][0], n_pot[0])),
+                    -sin(theta_m(energy, distances[angle_idx][0], n_pot[0])), cos(theta_m(energy, distances[angle_idx][0], n_pot[0]));
+                double phi_sum = 0;
                 for (int i = 0, dist_len = distances[angle_idx].size(); i < dist_len; i++)
                 {
-                    matrix_1 << cos(theta_m(energy, distances[angle_idx][i], n_pot[i])), sin(theta_m(energy, distances[angle_idx][i], n_pot[i])),
-                        -sin(theta_m(energy, distances[angle_idx][i], n_pot[i])), cos(theta_m(energy, distances[angle_idx][i], n_pot[i]));
-                    matrix_2 << std::complex<double>(cos(0.5 * phi(energy, distances[angle_idx][i], n_pot[i])), sin(0.5 * phi(energy, distances[angle_idx][i], n_pot[i]))), 0,
-                        0, std::complex<double>(cos(0.5 * phi(energy, distances[angle_idx][i], n_pot[i])), -sin(0.5 * phi(energy, distances[angle_idx][i], n_pot[i])));
-                    matrix_3 = matrix_1.transpose();
-                    a = a * matrix_1;
-                    a = a * matrix_2;
-                    a = a * matrix_3;
+                    phi_sum += phi(energy, distances[angle_idx][i], n_pot[i]);
                 }
+                matrix_2 << std::complex<double>(cos(0.5 * phi_sum), sin(0.5 * phi_sum)), 0,
+                    0, std::complex<double>(cos(0.5 * phi_sum), -sin(0.5 * phi_sum));
+                a = matrix_1 * matrix_2;
                 a = a * a.transpose();
                 a_completed << a(0, 0), a(0, 1), 0,
                     a(1, 0), a(1, 1), 0,
@@ -131,10 +128,9 @@ public:
         }
     }
 
-    void SaveToFile(std::string file_name)
+    void SaveToFile(std::string file_name, std::string p)
     {
         std::fstream fout;
-
         fout.open(file_name, std::ios::out);
         {
             auto angles = model->GetAngles();
@@ -145,7 +141,14 @@ public:
                 {
                     fout << angles[angle_idx] * 180 / PI << ", ";
                     fout << energies[energy_idx] << ", ";
-                    fout << p_01[angle_idx][energy_idx] << "\n";
+                    if (p == "p_00")
+                        fout << p_00[angle_idx][energy_idx] << "\n";
+                    if (p == "p_01")
+                        fout << p_01[angle_idx][energy_idx] << "\n";
+                    if (p == "p_10")
+                        fout << p_10[angle_idx][energy_idx] << "\n";
+                    if (p == "p_11")
+                        fout << p_11[angle_idx][energy_idx] << "\n";
                 }
             }
         }
